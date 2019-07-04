@@ -6,14 +6,14 @@ declare module "react-native-picker-module" {
     import React from 'react';
 
     interface ReactNativePickerModuleProps {
-        value?: number,
-        items: [],
-        title?: string,
-        ios?: object,
-        pickerRef: () => {},
-        onValueChange: () => {},
-        cancelButton?: string,
-        confirmButton?: string,
+        value?: any;
+        items: any[];
+        title?: string;
+        ios?: object;
+        pickerRef: Function;
+        onValueChange: Function;
+        cancelButton?: string;
+        confirmButton?: string;
     }
 
     const ReactNativePickerModule: (props: ReactNativePickerModuleProps) => React.Component<ReactNativePickerModuleProps>;
